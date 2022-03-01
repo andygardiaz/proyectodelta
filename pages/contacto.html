@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--Comienzo Head-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Proyecto Delta, espectáculo, humor, ciencia, tecnología, cine, Riviera" />
+    
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- CSS Interno -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Proyecto Delta</title>
+</head>
+<!--Final Head-->
+
+<!--Comienzo Body-->
+<body>
+    <header>
+        <!--Topbar-->
+        <!-- Redes Sociales -->
+        <div id="topbar">
+            <ul>
+                <li><a href="https://www.facebook.com/#">Facebook</a> </li>
+                <li><a href="https://www.twitter.com/#">Twitter</a></li>
+                <li><a href="https://t.me/#">Telegram</a></li>
+            </ul>
+        </div>
+        <!-- logo -->
+                <div class="navbar">
+            <div>
+                <a href="../index.html">
+                    <img src="../assets/logo_proyecto_delta.png" width="auto" height="53" alt="logo Proyecto Delta">
+                </a>
+            </div>
+        <!-- Barra de Navegación y Menú -->
+            <nav id="menu">
+                <ul>
+                    <li><a href="../pages/sobre_nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="../pages/galeria.html">Galería</a></li>
+                    <li><a href="../pages/blog.html">Blog</a></li>
+                    <li><a href="../pages/prensa.html">Prensa</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div id="hamburguesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </div>
+        </div> 
+        <!-- Final Barra de Navegación y Menú -->
+    </header>
+    <!--Final Header-->
+
+    <!--Comienzo MAIN-->
+    <main>
+        <section class="section__fullheight">
+            <div class="container">
+                    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                        <div class="row">
+                            <label class="required" for="name">Nombre:</label><br />
+                                <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                                    <span id="name_validation" class="error_message"></span>
+                        </div>
+                <div class="row">
+                            <label class="required" for="email">Email Ej: juan@ejemplo.com:</label><br />
+                                <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                                    <span id="email_validation" class="error_message"></span>
+                    </div>
+                <div class="row">
+                    <label class="required" for="message">Escriba aquí su mensaje:</label><br />
+                        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                            <span id="message_validation" class="error_message"></span>
+                </div>
+        
+                        <input id="submit_button" type="submit" value="Enviar mensaje" />
+                    </form>
+            </div>
+        </section>
+    </main>
+    <!--Final Main-->
+
+    <!--Comienzo footer-->
+    <footer class="footer">
+        <!-- Info -->
+        <div class="footer-container">
+            <div>
+                <img src="./assets/logo_proyecto_delta.png" width="100" alt="logo Proyecto Delta">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ad fugiat reiciendis dolor explicabo, reprehenderit nam aut, quas, neque quasi cumque nisi optio eligendi libero consequuntur iusto tenetur sit exercitationem?</p>    
+            </div>
+            <!-- Enlaces -->
+            <div>
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="../pages/sobre_nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="../pages/galeria.html"> Galería</a></li>
+                    <li><a href="../pages/blog.html">Blog</a></li>
+                    <li><a href="../pages/prensa.html">Prensa</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Newsletter y Redes Sociales -->
+            <div>
+                <h4>Suscríbete al Newsletter</h4>
+                <form action="https://backend.no-existe.net/" class="subscribe-form">
+                    <input class="subscribe" type="email" name="email" placeholder="Ej: juan@ejemplo.com" required>
+                    <button class="action-icon"><i class="fas fa-arrow-right"></i></button>
+                                    <input class="subscribe-button" type="submit" value="Suscribirse">
+                                </form>
+                <ul>
+                    <li><a href="https://www.facebook.com/#">Facebook</a></li>
+                    <li><a href="https://www.twitter.com/#">Twitter</a></li>
+                    <li><a href="https://t.me/#">Telegram</a></li>
+                </ul>
+                <!-- fin Info -->
+            </div>
+        </div>
+        <!-- copyright y info legal -->
+        <div id="footer-copyright">
+            <p>© 2022 Proyecto Delta. Todos los derechos reservados.</p>
+            <ul>
+                <li><a href="../legal_pages/aviso_legal.html">Aviso Legal</a></li>
+                <li><a href="../legal_pages/terminos-condiciones.html">Términos y Condiciones</a></li>
+                <li><a href="../legal_pages/privacidad.html">Privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!--Final footer-->
+
+</body>
+<!--Final Body-->
+</html>
