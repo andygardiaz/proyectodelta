@@ -1,0 +1,54 @@
+@import "colors";
+
+.footer {
+    width: 100%;
+    background-color: $negro;
+    color: $blanco;
+    text-align: left;
+    padding: 1.5rem 0 0 0;
+    overflow-x: hidden;
+    ul {
+        text-align: left;
+        li {
+            list-style: none;
+        }
+    }
+    p {
+        text-align: left;
+    }
+    a {
+        color: $blanco;
+        text-decoration: none;
+    }
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 1.5rem;
+    width: 100%;
+}
+    div {
+        width: 30%;
+    }
+#footer-copyright {
+    display: flex;
+    background-color: $azul;
+    color: $blanco;
+    justify-content: space-between;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1.5rem;
+    width: 100%;
+    ul {
+        display: flex;
+        li {
+            list-style: none;
+            margin: 0 0.5rem;
+        }
+.footer-social {
+    display: flex;
+    justify-content: space-around;
+    display: inline;
+}
+}
+}
+}
