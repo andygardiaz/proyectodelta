@@ -1,5 +1,11 @@
 @import "colors";
 
+//Aplicando extend para el footer y sus clases.
+.flex-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer {
     width: 100%;
     background-color: $negro;
@@ -21,8 +27,7 @@
         text-decoration: none;
     }
 .footer-container {
-    display: flex;
-    justify-content: space-between;
+    @extend .flex-footer;
     flex-wrap: wrap;
     padding: 0 1.5rem;
     width: 100%;
@@ -31,10 +36,9 @@
         width: 30%;
     }
 #footer-copyright {
-    display: flex;
+    @extend .flex-footer;
     background-color: $azul;
     color: $blanco;
-    justify-content: space-between;
     padding: 0.75rem 1.5rem;
     margin-top: 1.5rem;
     width: 100%;
@@ -45,9 +49,9 @@
             margin: 0 0.5rem;
         }
 .footer-social {
-    display: flex;
+    @extend .flex-footer;
     justify-content: space-around;
-    display: inline;
+    
 }
 }
 }

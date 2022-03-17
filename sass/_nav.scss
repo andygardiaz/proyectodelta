@@ -1,59 +1,70 @@
 @import "colors";
 
+//Utilizando mixin en el Navbar y sus clases
+@mixin reset-list {
+  list-style-type: none;
+  margin: 0;
+}
+
+@mixin menu-list {
+  padding: 0;
+  background-color: $blanco;
+  width: 100%;
+}
+
+@mixin reset-menu-list {
+  @include reset-list;
+  @include menu-list;
+}
+
+@mixin topbar-list {
+  padding: 0.625rem 1.5rem;
+  text-align: right;
+  background-color: $azul;
+}
+
+@mixin reset-topbar-list {
+  @include reset-list;
+  @include topbar-list;
+}
 
 #topbar {
-    z-index: 10;
-    width: 100%;
-    display: inline-block;
+  z-index: 10;
+  width: 100%;
+  display: inline-block;
 
-    ul {
-        margin: 0; 
-        padding: 0.625rem 1.5rem; 
-        list-style-type: none;
-        text-align: right; 
-        background-color: $azul; 
-        li {
-            display: inline; 
-            a{
-                text-decoration: none; 
-                padding: .2em 1em; 
-                color: $blanco; 
-                background-color: $azul;
-            a:hover{
-                color: $azul; 
-                background-color: $blanco;
-            }
-            }
+  ul {
+    @include reset-topbar-list;
+    li {
+      display: inline;
+      a {
+        text-decoration: none;
+        padding: 0.2em 1em;
+        color: $blanco;
+        background-color: $azul;
+        a:hover {
+          color: $azul;
+          background-color: $blanco;
         }
+      }
     }
+  }
 }
 
 #menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: $blanco;
-    width: 100%;
-    #menu li {
-        float: left;
-        #menu li a {
-            display: block;
-        color: $negro;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        #menu li a:hover{
-            background-color: $negro;
-            color: $blanco;
-        }
-        }
+  @include reset-menu-list;
+  #menu li {
+    float: left;
+    #menu li a {
+      display: block;
+      color: $negro;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      #menu li a:hover {
+        background-color: $negro;
+        color: $blanco;
+      }
     }
+  }
 }
-
-
-
-
-
-
-
-
