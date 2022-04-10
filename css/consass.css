@@ -36,66 +36,14 @@
 }
 #menu ul #menu li #menu li a {
   display: block;
-  color: black;
+  color: #f3f3f3;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 #menu ul #menu li #menu li a #menu li a:hover {
-  background-color: black;
+  background-color: #f3f3f3;
   color: #fff;
-}
-
-.flex-footer, .footer #footer-copyright ul .footer-social, .footer #footer-copyright, .footer .footer-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer {
-  width: 100%;
-  background-color: black;
-  color: #fff;
-  text-align: left;
-  padding: 1.5rem 0 0 0;
-  overflow-x: hidden;
-}
-.footer ul {
-  text-align: left;
-}
-.footer ul li {
-  list-style: none;
-}
-.footer p {
-  text-align: left;
-}
-.footer a {
-  color: #fff;
-  text-decoration: none;
-}
-.footer .footer-container {
-  flex-wrap: wrap;
-  padding: 0 1.5rem;
-  width: 100%;
-}
-.footer div {
-  width: 30%;
-}
-.footer #footer-copyright {
-  background-color: #262686;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  margin-top: 1.5rem;
-  width: 100%;
-}
-.footer #footer-copyright ul {
-  display: flex;
-}
-.footer #footer-copyright ul li {
-  list-style: none;
-  margin: 0 0.5rem;
-}
-.footer #footer-copyright ul .footer-social {
-  justify-content: space-around;
 }
 
 * {
@@ -142,6 +90,11 @@ section:not(:first-of-type) {
   max-height: 100vh;
 }
 
+.color-primario {
+  background-color: #262686;
+  color: white;
+}
+
 /* estrategia mobile last */
 @media (max-width: 768px) {
   .flex {
@@ -152,6 +105,20 @@ section:not(:first-of-type) {
 #iframe {
   width: 100%;
   height: 75vw;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  background-color: #f3f3f3;
+  color: #fff;
+}
+
+.footer-copyright {
+  background-color: #262686;
 }
 
 /*# sourceMappingURL=consass.css.map */

@@ -2,57 +2,15 @@
 
 //Aplicando extend para el footer y sus clases.
 .flex-footer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer {
-    width: 100%;
-    background-color: $negro;
-    color: $blanco;
-    text-align: left;
-    padding: 1.5rem 0 0 0;
-    overflow-x: hidden;
-    ul {
-        text-align: left;
-        li {
-            list-style: none;
-        }
-    }
-    p {
-        text-align: left;
-    }
-    a {
-        color: $blanco;
-        text-decoration: none;
-    }
-.footer-container {
-    @extend .flex-footer;
-    flex-wrap: wrap;
-    padding: 0 1.5rem;
-    width: 100%;
+  background-color: $negro;
+  color: $blanco;
 }
-    div {
-        width: 30%;
-    }
-#footer-copyright {
-    @extend .flex-footer;
-    background-color: $azul;
-    color: $blanco;
-    padding: 0.75rem 1.5rem;
-    margin-top: 1.5rem;
-    width: 100%;
-    ul {
-        display: flex;
-        li {
-            list-style: none;
-            margin: 0 0.5rem;
-        }
-.footer-social {
-    @extend .flex-footer;
-    justify-content: space-around;
-    
-}
-}
-}
+
+.footer-copyright {
+  background-color: $azul;
 }

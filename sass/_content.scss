@@ -47,6 +47,11 @@ section:not(:first-of-type){
 #offcanvasNavbar{
     max-height: 100vh;
 }
+
+.color-primario {
+    background-color: $azul;
+    color: white;
+}
 /* estrategia mobile last */
 @media (max-width: 768px) {
     .flex {
